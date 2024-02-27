@@ -37,7 +37,25 @@ def create_header():
 def main():
     create_header()
 
-    st.title("Generate Key Information Summary")
+    st.title("### Instructions for Using the Prototype GPT-4 Key Information Generator")
+    with st.expander("What is this?"):
+        st.markdown("""
+#### Purpose
+This prototype is exclusively designed for generating **Key Information (KI) sections** of informed consent documents related to **biomedical research**. It is important to note that it has not been developed or tested for use with social/behavioral informed consents. The KI output from this prototype is considered a **draft**, and the **Principal Investigator (PI)/study team** bears full responsibility for evaluating its content and accuracy before submission to the Institutional Review Board (IRB).
+
+#### Input of Information
+
+- **Documents Eligibility**: Only input informed consent documents where **all sections**, except for the KI section, are fully drafted. The prototype's effectiveness depends on the complete and accurate information from other sections of the consent document to construct the KI section.
+- **Accepted Formats**: The prototype accepts inputs in PDF, Word, or text file formats. The output will be provided in text format, which then must be **copied into the informed consent document, reviewed, and edited**. Please note that the output is **not saved** within the prototype.
+
+#### Restrictions
+
+It is crucial to avoid entering the following materials into the prototype due to their potentially sensitive nature. Doing so might violate the terms and conditions of a sponsor’s grant or contract:
+
+- The investigational protocol
+- Investigational drug or device brochure
+- Any other information prohibited by the grant or contract
+""")
 
     col1, col2 = st.columns([1, 3])
     with col1:
