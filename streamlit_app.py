@@ -37,7 +37,7 @@ def create_header():
 def main():
     create_header()
 
-    st.title("Key Information Summary Generator for Informed Consent Documents")
+    st.title("Key Information Summary Generator")
     with st.expander("### Instructions for Using the Prototype GPT-4 Key Information Generator"):
         st.markdown("""
 #### Purpose
