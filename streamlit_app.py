@@ -37,8 +37,8 @@ def create_header():
 def main():
     create_header()
 
-    st.title("### Instructions for Using the Prototype GPT-4 Key Information Generator")
-    with st.expander("What is this?"):
+    st.title("Key Information Summary Generator for Informed Consent Documents")
+    with st.expander("### Instructions for Using the Prototype GPT-4 Key Information Generator"):
         st.markdown("""
 #### Purpose
 This prototype is exclusively designed for generating **Key Information (KI) sections** of informed consent documents related to **biomedical research**. It is important to note that it has not been developed or tested for use with social/behavioral informed consents. The KI output from this prototype is considered a **draft**, and the **Principal Investigator (PI)/study team** bears full responsibility for evaluating its content and accuracy before submission to the Institutional Review Board (IRB).
