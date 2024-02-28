@@ -23,7 +23,7 @@ def get_image_base64(path: str) -> str:
     return f"data:image/png;base64,{encoded_string}"
 
 def create_header():
-    left_logo_base64 = get_image_base64('./images/logo_ethicscompliance.png')
+    left_logo_base64 = get_image_base64('./images/irb-white.png')
     right_logo_base64 = get_image_base64('./images/michr-hd-logo.png')
     
     header_html = f"""
