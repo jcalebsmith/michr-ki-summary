@@ -3,7 +3,7 @@ import os
 import base64
 from generate_ki_summary import generate_summary
 
-st.set_page_config(page_title="Informed Consent Summary Generator", layout="wide")
+st.set_page_config(page_title="Prototype AI Key Information Summary Generator", layout="wide")
 
 # Constants
 SUPPORTED_FILETYPES = {'.pdf', '.docx'}
@@ -37,7 +37,7 @@ def create_header():
 def main():
     create_header()
 
-    st.title("Key Information Summary Generator")
+    st.title("Prototype AI Key Information Summary Generator")
     with st.expander("### Instructions for Using the Prototype GPT-4 Key Information Generator"):
         st.markdown("""
 #### Purpose
@@ -57,8 +57,8 @@ It is crucial to avoid entering the following materials into the prototype due t
 - Any other information prohibited by the grant or contract
 """)
 
-    col1, col2 = st.columns([1, 3])
-    with col1:
+    col1, col2, col3 = st.columns([1, 4, 1])
+    with col2:
         uploaded_file = st.file_uploader("Upload Informed Consent", type=list(SUPPORTED_FILETYPES), accept_multiple_files=False)
 
     if uploaded_file is not None:
