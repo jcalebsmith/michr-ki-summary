@@ -57,7 +57,7 @@ It is crucial to avoid entering the following materials into the prototype due t
 - Any other information prohibited by the grant or contract
 """)
 
-    col1, col2, col3 = st.columns([1, 4, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
         uploaded_file = st.file_uploader("Upload Informed Consent", type=list(SUPPORTED_FILETYPES), accept_multiple_files=False)
 
